@@ -8,7 +8,7 @@ import utils as utils
 
 class GAT():
 	def __init__(self):
-		print("wtf")
+		pass
 
 	def setup(self, layer_no, input_feat_mat, hid_units, nb_features, nb_nodes, training, attn_drop, ffd_drop,
 			  adj_mat, n_heads, activation=tf.nn.elu, residual=False, concat=True):
