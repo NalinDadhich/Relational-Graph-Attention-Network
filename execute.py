@@ -117,9 +117,6 @@ print(A[0].todense().sum())
 # print(A[0])
 # A[0] = tf.Print(A[0],[A[0]])
 
-print("wtftshgdavsjdajsdbab")
-
-
 # Normalize adjacency matrices individually
 for i in range(len(A)):
 	A[i] = A[i] + unit
