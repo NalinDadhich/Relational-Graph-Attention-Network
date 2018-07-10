@@ -96,9 +96,7 @@ temp = sp.csr_matrix(-1 * np.ones((A[0].shape[0], A[0].shape[1])))
 # print(temp)
 unit = sp.eye(A[0].shape[0], A[0].shape[1])
 # print(A[0]+temp+unit)
-print("%%%%%%%%%%%%%%%%%%%%%")
 print(A[0].todense().sum())
-print("%%%%%%%%%%%%%%%%%%%%%")
 
 # for i in range(len(A)):
 # 	# A[i]+=unit
@@ -235,7 +233,6 @@ with tf.Graph().as_default():
 	lab_resh = tf.reshape(lbl_in, [-1, nb_classes])
 	msk_resh = tf.reshape(msk_in, [-1])
 	
-	# # print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 	# print (C.get_shape().as_list())
 	# idx_train_tf
 	# train_val_loss, train_val_acc = utils.evaluate_preds(C, [lbl_in_trn, lbl_in_val],[idx_train_tf, idx_val_tf])
@@ -310,7 +307,6 @@ with tf.Graph().as_default():
 		# saver.restore(sess, checkpt_file)
 
 		# _test_loss, _test_acc = sess.run([test_loss, test_acc],feed_dict=feed_dict_test)
-		# print("Hanalughya")
 		# print("Test set results:",
 		# "loss= {:.4f}".format(_test_loss[0]),
 		# "accuracy= {:.4f}".format(_test_acc[0]))
